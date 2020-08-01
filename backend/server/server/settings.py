@@ -121,3 +121,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# To enable our code in the Django we need to add ml app to INSTALLED_APPS in backend/server/server/settings.py:
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    # apps
+    'apps.endpoints',
+    'apps.ml'
+]
